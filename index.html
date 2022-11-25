@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!--   Create an HTML page to create a label which says enter a word and a text box where the user will enter the word and a label which says enter a number and a textbox to read the number.
+        
+        On click of button call a function which reads the word and number from the html textboxes and print the word on the page as many times as the number  
+    ex if person type hello  and put how many time - ex 5 timesit will show hello 5 times -->
+
+<label>Enter words</label>
+<input type="text" id="repeatWords"><br>
+<label>How many time?</label>
+<input type="text" id="manyTime"><br>
+<input type="button" value="submit" onclick="showResult()">
+<p id="display"></p>
+<script>
+function showResult(){
+var word = document.getElementById("repeatWords").value
+var time = parseInt(document.getElementById("manyTime").value)
+var s = " "// this is show repeat word in empty string
+//create loop ex time is 
+for (i=1; i<=time; i++){
+    s= s+ (word + "<br>")
+}
+document.getElementById("display").innerHTML= s
+
+
+
+}
+
+
+</script>
+
+    
+</body>
+</html>

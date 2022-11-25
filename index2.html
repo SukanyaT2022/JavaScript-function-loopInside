@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<label>Put Your Number</label>
+<input type="text" id="showNumber">
+<input type="button" value="sumbit" onclick="showResult()">
+
+<!--factor 2 all number devide by 2-->
+<script>
+function showResult(){
+    var num = document.getElementById("showNumber").value;
+    for(i=1; i<=num; i++){
+        if (num % i == 0)//% for reminder means if remainder is 0 ex 10/2 reminder is 0
+        document.write(i + "<br>")
+}
+}
+
+
+
+
+</script>
+
+  
+</body>
+</html>
